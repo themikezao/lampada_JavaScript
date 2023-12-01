@@ -14,11 +14,12 @@ botao.addEventListener('click', function() {
     document.body.style.backgroundColor = 'black'; 
   }
 
-  
-  lampada.style.opacity = '0';
-
+ 
+  setTimeout(function() {
+    lampada.style.opacity = '0';
+  }, 10);
 
   setTimeout(function() {
     lampada.style.opacity = '1';
-  }, 10);
+  }, 20);
 });
